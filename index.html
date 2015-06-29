@@ -8,6 +8,7 @@
       Dhawal Joharapurkar 
     </title>
     <link rel="stylesheet" href="http://people.csail.mit.edu/matei/basic-profile.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <script type="text/javascript">
@@ -25,6 +26,21 @@
 <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
 
     <style>
+    #sidebar1
+    {
+        border-left:2px solid #ccc;
+        padding-left: 1vw;
+       padding-top: 10vh;
+       top: 5vh;
+    }
+    #sidebar1 ul {list-style:none; margin:0; padding-top: 5vh;right: 5vw; border-top:1px solid #eee; }
+#sidebar1 li {list-style:none; font-size:3vh; margin:0 0 10px; padding:0 0 10px 0; color:#888; border-bottom:1px solid #eee;}
+#sidebar1 li a {font-size:1.2em;}
+#sidebar1 h2 {font-size: 1.4em;}
+#content1 { text-align:left;  padding-left: 15vw; padding-right: 5vw;}
+#wrap1 {color:#303030;  margin:40px auto; padding:0; overflow-x:hidden;  }
+
+
     a:link {
     color: #CC2828;
 }
@@ -43,80 +59,86 @@ MathJax.Hub.Config({
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  </head>
-
-  <body>
-    <div id="wrap">
-      <div id="sidebar" style="position:fixed;top:45px;left:930px;">
-
-      <div style="width: 100%; background:white; margin:0; text-align: center; padding-bottom: 15px;">
-      <a href="http://dhawaljoh.github.io/"><img src="images/me.jpeg" style="border: none;" alt="Dhawal Joharapurkar" /></a>
-      </div>
-        <ul>
+</head>
+<body>
+  <div id="wrap1">   
+    <div class="row">
+      <div class="col-lg-8 col-xs-8 col-sm-8">
+        <div id="content1">
+       
+          <h1 id="matei-zaharia" style="color:#888; font-weight:700">Dhawal Joharapurkar</h1>
+          <p>I am an undergraduate student at <a target="blank" href="http://www.manipal.edu/">Manipal Institute of Technology</a> pursuing my B.Tech in Computer Science and Engineering and will be graduating in May, 2015.</p>
+          <strong><a target="blank"  href="files/CV_new.pdf">Curriculum Vitae</a></strong>
+          <h2><a name="experience">Experience</a></h2>
+          <ul>
+            <li>Dec, 2014 - Present: Working with Prof. <a target="blank" href="http://www.talukdar.net/">Partha Talukdar</a> at SERC, IISc on Temporal Information Extraction by Micro-reading documents.</li><br>
+            <li>May, 2014 - June, 2014: Worked with Prof. <a target="blank" href="http://www.facweb.iitkgp.ernet.in/~sudeshna/">Sudeshna Sarkar</a>, The Department of Computer Science and Engineering</a> on Drive Behaviour Profiling based on GPS Data.</li><br>
+            <li>May, 2013 - June, 2013: Worked at <a target="blank" href="http://dataweave.in/home"> DataWeave</a>, built crawlers that aggregated data and stored it in JSON dumps which were accessible via API calls. A few APIs are available <a target="blank" href="http://dataweave.in/apis">here</a>.</li>
+          </ul> 
+          <h2><a name="projects">Projects</a></h2>
+          <p>I work on Machine Learning, Natural Language Processing and Game Theory.</p>
+          <p><strong><a target="blank" href="https://github.com/dhawaljoh/PeptideStatusDetection">Peptide Status Detection</a></strong>: Detecting  Fibrous regions in Proteins using the UniProtKB/Swiss-Prot data.</p>
+          <p><strong><a target="blank" href="https://github.com/dhawaljoh/IIT-Kharagpur">Automatic Driver Behaviour Profiling</a></strong>: Understand the driving patterns of various drivers using GPS data of trucks across India over 15 years.</p>
+          <h3>Kaggle</h3>
+          <p><strong><a target="blank"  href="https://github.com/dhawaljoh/kaggle--data-science-london">Data Science London + Scikit-learn</a></strong>: Competition to explore sklearn</p>
+          <h3>Hackerrank</h3>
+          <p><strong><a target="blank"  href="https://github.com/dhawaljoh/craigslist_category_classification"> Craigslist Post Classifier: Identify the Category</a></strong>: Classify an advertisement into one of 16 categories based on the advert's text.</p>
+          <h2><a name="papers">Papers</a></h2>
+          <h3 id="section">2014</h3>
+          <ul>
+            <li>Vaishak Salin<sup>*</sup>, Vishal Krishna<sup>*</sup>, <strong>Dhawal Joharapurkar</strong><sup>*</sup>. <a class="paper" target="blank"  href="files/craigslist.pdf">Craigslist Post Classifier: Identifying the category of a Craigslist post</a>.<em>To appear in ICCMEH 2014</em>.</li><br>
+            <li>Vaishak Salin<sup>*</sup>, Vishal Krishna<sup>*</sup>, <strong>Dhawal Joharapurkar</strong><sup>*</sup>. <a class="paper" target="blank"  href="files/crossell.pdf">Enhancing a Financial Service organization's cross-sell strategy using Artificial Neural Networks</a>.<em>To appear in ICCMEH 2014</em>.</li>
+          </ul>
+          <sup>*</sup>Authors contributed equally
+          <h2><a name="talks">Talks</a></h2>
+          <ul>
+            <li><a target="blank" href="files/openday2014.pdf">From Big Text To Big Knowledge</a>, <em>SERC Open Day</em>, Bangalore, India. 
+            <span style="float:right">February 2015.</span></li>
+          </ul>
+          <p class="credits">
+          Adapted from a template by <a href="http://people.csail.mit.edu/matei/">Matei Zaharia</a>.
+          </p>
+        </div>
+        </div>
+        <div class="col-lg-1 col-xs-1 col-sm-1"  ></div>
+     
+      <div class="col-lg-3 col-xs-3 col-sm-3" style="position:fixed;right:0vw;" >
+         
+      
+        <div id="sidebar1">
+          <div style="width: 100%; background:white; margin:0; text-align: center; padding-bottom: 15px;">
+          <a href="http://dhawaljoh.github.io/"><img src="images/me.jpeg" style="border: none;" alt="Dhawal Joharapurkar" class="img-responsive"/></a>
+          </div>
+          <ul>
           <li><a href="http://dhawaljoh.github.io/#experience">Experience</a></li>
           <li><a href="http://dhawaljoh.github.io/#projects">Projects</a></li>
           <li><a href="http://dhawaljoh.github.io/#papers">Papers</a></li>
           <li><a href="http://dhawaljoh.github.io/#talks">Talks</a></li>
-        </ul>
-      <a target="blank" href="mailto:dmjan21@gmail.com?subject=Hey%20Dhawal!" target="blank"><i class="fa fa-envelope fa-2x"></i></a>&emsp;&emsp;
-     <a target="blank"  href="https://github.com/dhawaljoh"><i class="fa fa-github fa-2x"></i></a>&emsp;&emsp;
-     <a target="blank" href="https://www.facebook.com/dhawaljoh"><i class="fa fa-facebook fa-2x"></i></a>&emsp;&emsp;
-     <a target="blank"  href="http://in.linkedin.com/in/dhawaljoh/en"><i class="fa fa-linkedin fa-2x"></i></a>
+          </ul>
+          <div class="row">
+            <div class="col-xs-3 col-md-3 col-lg-3">
+              <a target="blank" href="mailto:dmjan21@gmail.com?subject=Hey%20Dhawal!" target="blank"><i class="fa fa-envelope fa-2x"></i></a>
+            </div>
+            <div class="col-xs-3 col-md-3 col-lg-3">
+            <a target="blank"  href="https://github.com/dhawaljoh"><i class="fa fa-github fa-2x"></i></a>
+            </div>
+            <div class="col-xs-3 col-md-3 col-lg-3">
+            <a target="blank" href="https://www.facebook.com/dhawaljoh"><i class="fa fa-facebook fa-2x"></i></a>
+            </div>
+            <div class="col-xs-3 col-md-3 col-lg-3">
+            <a target="blank"  href="http://in.linkedin.com/in/dhawaljoh/en"><i class="fa fa-linkedin fa-2x"></i></a>
+            </div>
+            </div>
+          
+        </div>
       </div>
-      <div id="content">
-        <h1 id="matei-zaharia">Dhawal Joharapurkar</h1>
+   </div>
+   </div>
 
-    <p>I am an undergraduate student at <a target="blank" href="http://www.manipal.edu/">Manipal Institute of Technology</a> pursuing my B.Tech in Computer Science and Engineering and will be graduating in May, 2015.</p>
-
-<strong><a  target="blank"  href="files/CV_new.pdf">Curriculum Vitae</a></strong>
-
-
-
-
-<h2><a name="experience">Experience</a></h2>
-  <ul>
-    <li>Dec, 2014 - Present: Working with Prof. <a target="blank" href="http://www.talukdar.net/">Partha Talukdar</a> at SERC, IISc on Temporal Information Extraction by Micro-reading documents.</li><br>
-    <li>May, 2014 - June, 2014: Worked with Prof. <a target="blank" href="http://www.facweb.iitkgp.ernet.in/~sudeshna/">Sudeshna Sarkar</a>, The Department of Computer Science and Engineering</a> on Drive Behaviour Profiling based on GPS Data.</li><br>
-
-    <li>May, 2013 - June, 2013: Worked at <a target="blank" href="http://dataweave.in/home"> DataWeave</a>, built crawlers that aggregated data and stored it in JSON dumps which were accessible via API calls. A few APIs are available <a target="blank" href="http://dataweave.in/apis">here</a>.</li></ul> </span>
+   <script src="js/bootstrap.min.js"></script>
+   </body>
+    
+  </html>
+  
 
 
-<h2><a name="projects">Projects</a></h2>
-
-<p>I work on Machine Learning, Natural Language Processing and Game Theory.</p>
-
-  <p><strong><a target="blank" href="https://github.com/dhawaljoh/PeptideStatusDetection">Peptide Status Detection</a></strong>: Detecting Fibrous regions in Proteins using the UniProtKB/Swiss-Prot data.</p>
-  <p><strong><a target="blank" href="https://github.com/dhawaljoh/IIT-Kharagpur">Automatic Driver Behaviour Profiling</a></strong>: Understand the driving patterns of various drivers using GPS data of trucks across India over 15 years.</p>
-
-  <h3>Kaggle</h3>
-      <p><strong><a target="blank"  href="https://github.com/dhawaljoh/kaggle--data-science-london">Data Science London + Scikit-learn</a></strong>: Competition to explore sklearn</p>
-
-  <h3>Hackerrank</h3>
-    <p><strong><a target="blank"  href="https://github.com/dhawaljoh/craigslist_category_classification"> Craigslist Post Classifier: Identify the Category</a></strong>: Classify an advertisement into one of 16 categories based on the advert's text.</p>
-
-
-
-<h2><a name="papers">Papers</a></h2>
-
-<h3 id="section">2014</h3>
-
-<ul>
-  <li>Vaishak Salin<sup>*</sup>, Vishal Krishna<sup>*</sup>, <strong>Dhawal Joharapurkar</strong><sup>*</sup>. <a class="paper" target="blank"  href="files/craigslist.pdf">Craigslist Post Classifier: Identifying the category of a Craigslist post</a>.<em>To appear in ICCMEH 2014</em>.</li><br>
-  <li>Vaishak Salin<sup>*</sup>, Vishal Krishna<sup>*</sup>, <strong>Dhawal Joharapurkar</strong><sup>*</sup>. <a class="paper" target="blank"  href="files/crossell.pdf">Enhancing a Financial Service organization's cross-sell strategy using Artificial Neural Networks</a>.<em>To appear in ICCMEH 2014</em>.</li>
-</ul>
-<sup>*</sup>Authors contributed equally
-
-<h2><a name="talks">Talks</a></h2>
-
-<ul>
-  <li><a target="blank" href="files/openday2014.pdf">From Big Text To Big Knowledge</a>, <em>SERC Open Day</em>, Bangalore, India. <span style="float:right">February 2015.</span></li>
-</ul>
-
-
-        <p class="credits">
-          Adapted from a template by <a href="http://people.csail.mit.edu/matei/">Matei Zaharia</a>.
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
